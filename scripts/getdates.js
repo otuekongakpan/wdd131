@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-
   const modifiedSpan = document.querySelector("#lastModified");
   if (modifiedSpan) {
     const lastModified = new Date(document.lastModified);
