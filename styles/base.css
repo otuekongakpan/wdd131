@@ -20,7 +20,7 @@ header p{
     text-align: center;
     font: var(--font-family);
     padding: 1rem;
-    font-size: 1.2em;
+    font-size: 1.7rem;
 }
 
 footer p {
@@ -132,7 +132,7 @@ img {
   height: auto;
 }
 
-.card h3:first-of-type {
+.card h2:first-of-type {
     margin-top: -1rem;
     margin-right: -1rem;
     margin-left: -1rem;
