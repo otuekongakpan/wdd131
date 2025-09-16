@@ -16,6 +16,7 @@
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  
   .hamburger{
     display: none;
 }
