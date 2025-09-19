@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Otuekong Akpan">
+    <meta name="description" content="A website that contains a place with it properties and weather condition">
+    <meta name="keywords" content="place, properties, weather">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1> 
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-desktop.webp" media="(min-width: 551px)" id="hero-desktop">
+                <source srcset="images/hero-mobile.webp" media="(max-width: 550px)" id="hero-mobile">
+                <img src="images/hero-mobile.webp" alt="hero mobile" >
+            </picture>
+
+            <div class="data">
+                <h2>Data</h2>
+                <div><strong>Area:</strong> <span id="Area">Lagos, Nigeria</span></div>
+                <div><strong>Population:</strong> <span id="Population">21 Million</span></div>
+                <div><strong>Language:</strong> <span id="Language">English</span></div>
+                <div><strong>Capital:</strong> <span id="Capital">Abuja</span></div>
+                <div><strong>Currency:</strong> <span id="Currency">Naira (NGN)</span></div>
+                <div><strong>Time Zone:</strong> <span id="TimeZone">WAT (UTC+1)</span></div>
+                <div><strong>Calling Code:</strong> <span id="CallingCode">+234</span></div>
+            </div>
+
+            <div class="weather-info">
+                <h2> Weather Information</h2>
+                <img src="images/weathericon.svg" alt="Weather Icon" class="weather-icon" width="50" height="50">
+                <div><strong>Temperature:</strong> <span id="temperature">9</span> <span>°C</span></div>
+                <div><strong>Condition:</strong> <span id="condition">Partly Cloudy</span></div>
+                <div><strong>Humidity:</strong> <span id="humidity">60</span><span>%</span></div>
+                <div><strong>Wind Speed:</strong> <span id="wind-speed">15</span> <span>km/h</span></div>
+                <div><strong>Wind Chill:</strong> <span id="wind-chill"></span></div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>| Otuekong Akpan | Lagos, Nigeria</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
