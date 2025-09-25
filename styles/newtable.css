@@ -1,0 +1,29 @@
+table {
+    border: 1px solid gray;
+
+    width: 800px;
+
+}
+
+thead th {
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 1 rem;
+}
+
+th, td {
+
+border-collapse: collapse;
+padding: 0.5 rem, 1 rem;
+white-space: pre;
+}
+
+thead, tbody {
+    padding: 10px
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(190, 188, 188);
+}
+
