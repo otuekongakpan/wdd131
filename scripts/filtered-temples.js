@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
   const yearSpan = document.querySelector("#currentyear");
@@ -20,10 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
   });
-
- 
-
-    
+   
   const temples = [
   {
     templeName: "Aba Nigeria",
@@ -106,29 +101,58 @@ document.addEventListener("DOMContentLoaded", function () {
       "https://churchofjesuschristtemples.org/assets/img/temples/billings-montana-temple/billings-montana-temple-8805-main.jpg"
     }
 ];
+  function displayTemples(temples) {
+    document.querySelector(".grid-container").innerHTML = "";
+    const container = document.querySelector(".grid-container");
+    container.innetHTML = "";
+    temples.forEach(temple => {
+      const card = document.createElement("div");
+      card.classList.add("temple-card");
 
-  const container = document.querySelector(".grid-container");
-  temples.forEach(temple => {
-    const card = document.createElement("div");
-    card.classList.add("temple-card");
+      card.innerHTML = `
+      <h2>${temple.templeName}</h2>
+      <img src="${temple.imageUrl}" alt="${temple.templeName}  loading="lazy">
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Area:</strong> ${temple.area} sq ft</p>
+    `;
 
-    card.innerHTML = `
-    <h2>${temple.templeName}</h2>
-    <img src="${temple.imageUrl}" alt="${temple.templeName}  loading="lazy">
-    <p><strong>Location:</strong> ${temple.location}</p>
-    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-    <p><strong>Area:</strong> ${temple.area} sq ft</p>
-  `;
+      container.appendChild(card);
+    });
+  }
 
-  container.appendChild(card);
+  displayTemples(temples);
 
+  const oldLink = document.querySelector("#old");
+
+  oldLink.addEventListener("click", () => {
+    let old = temples.filter(temple => temple.dedicated < "1900");
+    displayTemples(old);
   })
 
-  const homeLink = document.querySelector("#home");
-  homeLink.addEventListener("click", () => {
-    
+  const newLink = document.querySelector("#new");
+  newLink.addEventListener("click", () => {
+    let newTemples = temples.filter(temple => temple.dedicated > "2000");
+    displayTemples(newTemples);
 
   })
   
+  const homeLink = document.querySelector("#home");
+  homeLink.addEventListener("click", () => {
+    let home = temples;
+    displayTemples(home);
+  })
+
+  const largeLink = document.querySelector("#large");
+  largeLink.addEventListener("click", () => {
+    let large = temples.filter(temple => temple.area > "90000");
+    displayTemples(large);
+  })
+
+  const smallLink = document.querySelector("#small");
+  smallLink.addEventListener("click", () => {
+    let small = temples.filter(temple => temple.area < "10000");
+    displayTemples(small);
+  })
 
 });
