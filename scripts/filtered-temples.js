@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function displayTemples(temples) {
     document.querySelector(".grid-container").innerHTML = "";
     const container = document.querySelector(".grid-container");
-    container.innetHTML = "";
     temples.forEach(temple => {
       const card = document.createElement("div");
       card.classList.add("temple-card");
