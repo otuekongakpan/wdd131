@@ -14,8 +14,8 @@
 }
 
 h1 {
-    font-family: var(--heading2-6-font);
-    font-weight: 600;
+    font-family: var(--heading1-font);
+    font-weight: 400;
     color: var(--secondary-color)
 }
 
