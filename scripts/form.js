@@ -48,5 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 
-    
+let reviewCount = localStorage.getItem("reviewCount");
+
+  if (!reviewCount) {
+    reviewCount = 0;
+  }
+
+  reviewCount = Number(reviewCount) + 1;
+
+  localStorage.setItem("reviewCount", reviewCount);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const message = document.createElement("p");
+    message.textContent = `You have submitted ${reviewCount} review${reviewCount > 1 ? "s" : ""}.`;
+    document.body.appendChild(message);
+  });
+ 
 });
