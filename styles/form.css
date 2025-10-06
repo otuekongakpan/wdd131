@@ -126,8 +126,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-
-
   main {
     width: 100%;
 
@@ -157,12 +155,20 @@ footer {
   .rating-items {
     display: flex;
     flex-wrap: wrap;           
-    justify-content: center;   
-    gap: 10px;
+    justify-content: center; 
+
   }
 
   .rating-item {
-    width: 50px;             
+    width: 60px;             
+  }
+  .rating-item .stars {
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .rating-items {
+    gap: 14px;
   }
 
   button {
