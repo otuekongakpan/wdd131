@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Otuekong Akpan">
-    <meta name="description" content="A simple form page for a product review">
-     <meta name="keywords" content="product, review">
-    <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
-    <title>Product Review</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Otuekong Akpan">
+  <meta name="description" content="A simple form page for a product review">
+  <meta name="keywords" content="product, review">
+  <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <title>Product Review</title>
 </head>
 <body>
-    <main>
-        <header>
-            <h1>Product Review</h1>
-        </header>
-        <form method="get" action="review.html">
-            <fieldset class="productName">
-                <legend>Product Name:</legend>
-                    <select id="products" name="products">
-                        <option disabled selected>Select a Product</option>
-                    </select>
+  <main>
+    <header>
+      <h1>Product Review</h1>
+    </header>
 
-                </fieldset>
+    <form method="get" action="review.html">
 
-                <fieldset class="rating" aria-label="Overall rating">
-                <legend>Overall Rating:</legend>
 
-                <div class="rating-items">
-                    <div class="rating-item">
-                    <label for="one_star" class="stars" aria-hidden>★</label>
-                    <input type="radio" id="one_star" name="star" value="1">
-                    </div>
+      <fieldset class="productName">
+        <legend><label for="products">Product Name:</label></legend>
+        <select id="products" name="products" required>
+          <option disabled selected>Select a Product</option>
+        </select>
+      </fieldset>
 
-                    <div class="rating-item">
-                    <label for="two_star" class="stars" aria-hidden>★★</label>
-                    <input type="radio" id="two_star" name="star" value="2">
-                    </div>
+      <fieldset class="rating" aria-label="Overall rating">
+        <legend>Overall Rating:</legend>
+        <div class="rating-items">
+          <div class="rating-item">
+            <input type="radio" id="one_star" name="star" value="1">
+            <label for="one_star" class="stars">★</label>
+          </div>
 
-                    <div class="rating-item">
-                    <label for="three_star" class="stars" aria-hidden>★★★</label>
-                    <input type="radio" id="three_star" name="star" value="3">
-                    </div>
+          <div class="rating-item">
+            <input type="radio" id="two_star" name="star" value="2">
+            <label for="two_star" class="stars">★★</label>
+          </div>
 
-                    <div class="rating-item">
-                    <label for="four_star" class="stars" aria-hidden>★★★★</label>
-                    <input type="radio" id="four_star" name="star" value="4">
-                    </div>
+          <div class="rating-item">
+            <input type="radio" id="three_star" name="star" value="3">
+            <label for="three_star" class="stars">★★★</label>
+          </div>
 
-                    <div class="rating-item">
-                    <label for="five_star" class="stars" aria-hidden>★★★★★</label>
-                    <input type="radio" id="five_star" name="star" value="5">
-                    </div>
-                </div>
-                </fieldset>
+          <div class="rating-item">
+            <input type="radio" id="four_star" name="star" value="4">
+            <label for="four_star" class="stars">★★★★</label>
+          </div>
 
-                <fieldset class="date">
-                    <legend>Date of Installation:</legend>
-                    <input type="date" id="dateOfInstallation" name="installation_date">
-                </fieldset>
+          <div class="rating-item">
+            <input type="radio" id="five_star" name="star" value="5">
+            <label for="five_star" class="stars">★★★★★</label>
+          </div>
+        </div>
+      </fieldset>
 
-                <fieldset class="features">
-                <legend>Which features did you find useful in the product? <span>(Check all that apply)</span></legend>
+      <fieldset class="date">
+        <legend><label for="dateOfInstallation">Date of Installation:</label></legend>
+        <input type="date" id="dateOfInstallation" name="installation_date">
+      </fieldset>
 
-                <div>
-                    <input type="checkbox" id="durability" name="features"  value="durability">
-                    <label for="durability">Durability</label>
-                </div>
+      <fieldset class="features">
+        <legend>Which features did you find useful in the product? <span>(Check all that apply)</span></legend>
 
-                <div>
-                    <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
-                    <label for="easeOfUse">Ease of Use</label>
-                </div>
+        <div>
+          <input type="checkbox" id="durability" name="features" value="durability">
+          <label for="durability">Durability</label>
+        </div>
 
-                <div>
-                    <input type="checkbox" id="performance" name="features" value="performance">
-                    <label for="performance">Performance</label>
-                </div>
+        <div>
+          <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
+          <label for="easeOfUse">Ease of Use</label>
+        </div>
 
-                <div>
-                    <input type="checkbox" id="design" name="features" value="design">
-                    <label for="design">Design</label>
-                </div>
-                </fieldset>
+        <div>
+          <input type="checkbox" id="performance" name="features" value="performance">
+          <label for="performance">Performance</label>
+        </div>
 
-                <fieldset id="review">
-                    <legend>Written Review <span id="optional">(Optional)</span></legend>
-                    <textarea name="review" id="review" rows="10" cols="70"></textarea>
-                </fieldset>
-                 
-                <fieldset class="name">
-                    <legend>Name <span>(Optional)</span></legend>
-                    <input type="text" id="name" name="name" placeholder="Name">
-                </fieldset>
-            
-            <button type="submit">Post Review</button>
-        </form>
-    </main>
-    <footer>
-        <p>©️2025 | Otuekong Akpan | Lagos, Nigeria</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </footer>
+        <div>
+          <input type="checkbox" id="design" name="features" value="design">
+          <label for="design">Design</label>
+        </div>
+      </fieldset>
+
+      <fieldset id="reviewField">
+        <legend><label for="reviewText">Written Review <span id="optional">(Optional)</span></label></legend>
+        <textarea name="review" id="reviewText" rows="10" cols="70"></textarea>
+      </fieldset>
+
+
+      <fieldset class="name">
+        <legend><label for="name">Name <span>(Optional)</span></label></legend>
+        <input type="text" id="name" name="name" placeholder="Name">
+      </fieldset>
+
+      <button type="submit">Post Review</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>©️2025 | Otuekong Akpan | Lagos, Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
