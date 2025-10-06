@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const option = document.createElement("option");
       option.value = product.id;
       option.textContent = product.name;
-      productSelect.appendChild(option);
+        productSelect.appendChild(option);
+        
     });
+
+    
 });
