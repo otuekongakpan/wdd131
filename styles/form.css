@@ -54,12 +54,15 @@ legend {
   display: flex;
   gap: 9px;
   justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
 .rating-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-direction: column-reverse;
 }
 
 .rating-item .stars {
@@ -153,21 +156,6 @@ footer {
   }
 
   .rating-items {
-    display: flex;
-    flex-wrap: wrap;           
-    justify-content: center; 
-
-  }
-
-  .rating-item {
-    width: 60px;             
-  }
-  .rating-item .stars {
-    font-size: 17px;
-    cursor: pointer;
-  }
-
-  .rating-items {
     gap: 14px;
   }
 
@@ -177,6 +165,33 @@ footer {
     border-radius: 2px;
     margin-top: 10px;
   }
+  .rating-items {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 4px;
+}
+
+.rating-item {
+  display: flex;
+  flex-direction: column-reverse; 
+  align-items: center;
+  text-align: center;
+  min-width: 60px; 
+}
+
+.rating-item .stars {
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.rating-item input[type="radio"] {
+  margin-top: 4px;
+}
 
   footer {
     width: 100%;
