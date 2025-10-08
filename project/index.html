@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Otuekong Akpan">
+  <meta name="description" content="A site that contains tourist attractions, bucket lists and the rich history and culture of Nigeria for tourists and visitors.">
+  <meta name="keywords" content="Nigeria, tourist, attractions, culture, history">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/visit-nigeria.css">
+  <script src="scripts/visit-nigeria.js" defer></script>
+  <title>Visit Nigeria</title>
+</head>
+
+<body>
+  <main>
+    <header>       
+      <div class="logo">
+        <h1>Visit Nigeria</h1>
+      </div>
+      <div class="nav-container">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav id="navMenu">
+          <a href="index.html" target="_blank">Home</a>
+          <a href="history.html" target="_blank">History</a>
+          <a href="trips.html" target="_blank">Trips</a>
+          <a href="bucketlist.html" target="_blank">Bucket List</a>
+          <a href="contact.html" target="_blank">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Explore the Wonders of Nigeria</h1>
+        <p>Discover the rich culture, history, and breathtaking landscapes that make Nigeria a must-visit destination.</p>
+        <a href="trips.html" class="btn">Plan Your Trip</a>
+      </div>
+      <div class="hero-image">
+            <div class="overlay"></div>
+                <img src="images/nigeria-hero.jpeg" alt="Beautiful landscape of Nigeria" loading="lazy">
+            </div>
+      </div>
+    </section>
+
+
+    <section class="history">
+      <h2>Rich History and Culture</h2>
+      <div class= "history-grid">
+            <div class="history-left">
+              <p>Nigeria boasts a diverse cultural heritage with over 250 ethnic groups, each with its own unique traditions, languages, and festivals. From the ancient Nok civilization to the vibrant Yoruba and Igbo cultures, Nigeria's history is a tapestry of fascinating stories and achievements.</p></div>
+            <div class="history-right">
+                 <img src="images/nigeria-culture.jpg" alt="Cultural festival in Nigeria" loading="lazy">
+            </div>
+      </div>
+      <a href="history.html" class="btn">Learn More</a>
+    </section>
+
+
+    <section class="attractions">
+      <h2>Top Tourist Attractions</h2>
+
+      <div class="attractions-grid"></div>
+      <a href="trips.html" class="btn">See More Attractions</a>
+    </section>
+
+
+    <section class="bucket-list">
+      <h2>Your Nigeria Bucket List</h2>
+      <div class="bucket-list-items">
+            <div class="bucket-item">
+            <img src="images/olumo-rock.jpeg" alt="Olumo Rock" loading="lazy">
+            <h3>Visit the Olumo Rock</h3>
+            </div>
+
+            <div class="bucket-item">  
+            <img src="images/calabar-carnival.jpeg" alt="Calabar Carnival" loading="lazy">
+            <h3>Experience the Calabar Carnival</h3>
+            </div>
+
+            <div class="bucket-item">
+            <img src="images/aso-rock.jpg" alt="Aso Rock" loading="lazy">
+            <h3>Explore the Aso Rock</h3>
+            </div>
+       </div>
+      <a href="bucketlist.html" class="btn">See More</a>
+    </section>
+
+
+    <section class="food">
+      <h2>Nigerian Cuisines</h2>
+      <div class="food-items">
+        <div class="food-item">
+          <img src="images/jollof-rice.jpg" alt="Jollof Rice" loading="lazy">
+          <h3>Jollof Rice</h3>
+        </div>
+        <div class="food-item">
+          <img src="images/pounded-yam.jpg" alt="Pounded Yam and Egusi Soup" loading="lazy">
+          <h3>Pounded Yam and Egusi Soup</h3>
+        </div>
+        <div class="food-item">
+          <img src="images/suya.jpg" alt="Suya" loading="lazy">
+          <h3>Suya</h3>
+        </div>
+      </div>
+      <a href="trips.html" class="btn">Explore More Cuisines</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Visit Nigeria. All rights reserved.</p>
+
+
+    <p><span id="currentyear"></span> | Otuekong Akpan | Lagos, Nigeria</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+    <nav class="socialmedia">
+    <a href="https://www.facebook.com">
+        <img src="images/facebook.png" alt="Facebook Icon" width="20">
+    </a>
+    <a href="https://www.instagram.com">
+        <img src="images/instagram.png" alt="Instagram Icon" width="20">
+    </a>
+    <a href="https://www.twitter.com">
+        <img src="images/twitter.png" alt="Twitter Icon" width="20">
+    </a>
+    
+</nav>
+  </footer>
+</body>
+</html>
