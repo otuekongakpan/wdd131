@@ -22,6 +22,12 @@ main, footer{
 
 }
 
+h1 {
+    font-family: var(--header-font);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 h2 {
     font-family: var(--sub-heading-font);
     font-weight: bold;
@@ -355,15 +361,28 @@ h3{
 }
 
 /*history page specific styles*/
-
+section h1{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
 
 
 /*trips page specific styles*/
-
+section h1{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
 
 
 /*bucketlist page specific styles*/
 
-
+section h1{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
 
 /*contact page specific styles*/
+section h1{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
