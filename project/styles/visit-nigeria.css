@@ -152,6 +152,18 @@ header {
   border-radius: 20px;
 }
 
+.hero-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: var(--body-font);
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -247,7 +259,7 @@ h3{
     margin: 10px 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:600px) {
     #navMenu {
         display: none;
     }
@@ -276,17 +288,15 @@ h3{
         height: auto;
     }
     .hero-text {
-        width: 70%;
+        width: 90%;
         padding: 5px;
     }
     .hero-text h1 {
         font-size: 1rem;
     }
-    .hero-text h2 {
-        font-size: 1rem;
-    }
+  
     .hero-text p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .btn {
         padding: 8px 16px;
@@ -327,11 +337,22 @@ h3{
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
 }
-.hero-text h2,
-.hero-text p {
-  color: white;
-  line-height: 1.5;
-}
+    .hero-text h2,
+    .hero-text p {
+    color: white;
+    line-height: 1.9;
+    }
+    .hero-image .img {
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .hero-btn {
+        padding-top: 8px;
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
 
 
 }
