@@ -112,6 +112,7 @@ header {
 
 .hero-text h1 {
     font-family: var(--header-font);
+    color: white;
 }
 
 .hero-text h2,
@@ -361,14 +362,14 @@ h3{
 }
 
 /*history page specific styles*/
-section h1{
+.nigeria-history h1{
     color: var(--primary-color);
     font-size: 1.5rem;
 }
 
 
 /*trips page specific styles*/
-section h1{
+.trips h1{
     color: var(--primary-color);
     font-size: 1.5rem;
 }
@@ -376,7 +377,7 @@ section h1{
 
 /*bucketlist page specific styles*/
 
-section h1{
+.bucket-list h1{
     color: var(--primary-color);
     font-size: 1.5rem;
 }
