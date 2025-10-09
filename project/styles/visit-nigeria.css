@@ -374,6 +374,42 @@ h3{
     font-size: 1.5rem;
 }
 
+.trips-grid img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    overflow-x: scroll;
+
+}
+
+.trips-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.trips-grid:hover{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.trip-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.trip-item:hover{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 
 /*bucketlist page specific styles*/
 
