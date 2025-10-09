@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
     
-    const attractions = [
+    const trips = [
       {
         name: "Zuma Rock",
         image: "images/zuma-rock.jpeg",
@@ -42,28 +42,39 @@ document.addEventListener("DOMContentLoaded", function () {
         alt: "Yankari National Park"
       
       },
-
+      {
+        name: "Lekki Conservation Center",
+        image: "images/lekki-conservation.jpeg",
+        loading: "lazy",
+        alt: "Lekki Conservation Center"
+      },
+      {
+        name: "Nike Centre for Art and Culture",
+        image: "images/nike-art-centre.jpg",
+        loading: "lazy",
+        alt: "Nike Centre for Art and Culture"
+      }
     ];
   
-    function displayAttractions(attractions) {
-      const attractionsContainer = document.querySelector('.attractions-grid');
-      if (!attractionsContainer) return;
-      attractionsContainer.innerHTML = '';
-  
-      attractions.forEach(attraction => {
-        const attractionDiv = document.createElement('div');
-        attractionDiv.classList.add('attraction-item');
-  
-        attractionDiv.innerHTML = `
-          <img src="${attraction.image}" alt="${attraction.alt}" loading="${attraction.loading}">
-          <h3>${attraction.name}</h3>
+    function displayTrips(trips) {
+      const tripsContainer = document.querySelector('.trips-grid');
+      if (!tripsContainer) return;
+      tripsContainer.innerHTML = '';
+
+      trips.forEach(trip => {
+        const tripDiv = document.createElement('div');
+        tripDiv.classList.add('trip-item');
+
+        tripDiv.innerHTML = `
+          <img src="${trip.image}" alt="${trip.alt}" loading="${trip.loading}">
+          <h3>${trip.name}</h3>
         `;
-    
-        attractionsContainer.appendChild(attractionDiv);
+
+        tripsContainer.appendChild(tripDiv);
       });
     }
-  
-    displayAttractions(attractions);
+
+    displayTrips(trips);
 
 });
 
