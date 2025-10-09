@@ -21,8 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
+      
+    
   }
 
+    
     
     const trips = [
       {
