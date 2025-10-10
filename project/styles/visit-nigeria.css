@@ -194,7 +194,7 @@ header {
 }
 
 .attractions{padding-top: 30px;}
-.bucket-list{padding-top: 30px;}
+.home-bucket-list{padding-top: 30px;}
 .food{padding-top: 30px;}
 
 .history-grid{
@@ -225,13 +225,13 @@ header {
     gap: 10px;
 }
 
-.bucket-list-items img {
+.home-bucket-list-items img {
     width: 200px;
     height: 150px;
     border-radius: 10px;
 }
 
-.bucket-list-items {
+.home-bucket-list-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -289,12 +289,13 @@ h3{
         text-align: center;
         gap: 5px;
     }
-    .history-grid, .attractions-grid, .bucket-list-items, .food-items {
+    .history-grid, .attractions-grid, .home-bucket-list-items, .food-items {
         grid-template-columns: 1fr;
     }
-    .history-right img, .attractions-grid img, .bucket-list-items img, .food-items img {
+    .history-right img, .attractions-grid img, .home-bucket-list-items img, .food-items img {
         width: 100%;
         height: auto;
+        border-radius: 10px;
     }
     .hero-text {
         width: 90%;
@@ -334,17 +335,10 @@ h3{
     }
 
     #navMenu.active a {
-    padding: 10px;
+    padding-bottom: 10px;
     display: block;
     }
 
-    #navMenu a:hover {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-}
     .hero-text h2,
     .hero-text p {
     color: white;
@@ -366,6 +360,8 @@ h3{
         text-align: center;
         justify-content: center;
     }
+
+
 }
 
 /*history page specific styles*/
@@ -454,6 +450,13 @@ h3{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.bucket-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 .bucket-item {
