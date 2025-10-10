@@ -63,7 +63,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    displayAttractions(attractions);
+  displayAttractions(attractions);
+  
+let visitCount = localStorage.getItem("visitCount");
+
+  if (!visitCount) {
+    visitCount = 0;
+  }
+
+  visitCount = Number(visitCount) + 1;
+
+  localStorage.setItem("visitCount", visitCount);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const message = document.createElement("p");
+    message.textContent = `You have visited this page ${visitCount} time${visitCount > 1 ? "s" : ""}.`;
+    document.body.appendChild(message);
+  });
 
 });
 
