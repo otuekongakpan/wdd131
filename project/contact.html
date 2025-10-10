@@ -25,6 +25,7 @@
       <div class="logo">
         <h1>Visit Nigeria</h1>
       </div>
+      
       <div class="nav-container">
         <button class="hamburger" id="hamburger">&#9776;</button>
         <nav id="navMenu">
@@ -34,29 +35,74 @@
           <a href="bucketlist.html">Bucket List</a>
           <a href="contact.html">Contact Us</a>
         </nav>
+
       </div>
     </header>
+
+
+
+    <section class="contact-form">
+      <h1>Contact Us</h1>
+      <p>If you have any questions, suggestions, or would like to share your experiences about visiting Nigeria, please feel free to reach out to us. We would love to hear from you!</p>
+
+      <form action="contact.html" method="get" class="contact-form">
+        <fieldset class="name">
+            <legend><label for="name">Name</label></legend>
+            <input type="text" id="name" name="name" placeholder="Your name">
+        </fieldset>
+
+        <fieldset class="email">
+            <legend><label for="email">Email <span>(Required)</span></label></legend>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+        </fieldset>
+        
+        <fieldset id="reviewField">
+            <legend><label for="reviewText">Your Review or Suggestion</label></legend>
+            <textarea name="review" id="reviewText" rows="10" cols="70"></textarea>
+        </fieldset>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+
+    <div class="divider">
+        <section class="map">
+            <h2>Our Location</h2>
+            <p>We are based in Lagos, Nigeria. Feel free to visit us or send us a message through the contact form above.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.524634622634!2d3.379205275769823!3d6.524379395290981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf7e8b5c5b8b7%3A0x9e4f0b8c8e4f0b8c!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>    
+        </section>
+
+        <section class="mobile-contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:info@visitnigeria.com">info@visitnigeria.com</a></p>
+            <p>Phone: <a href="tel:+2341234567890">+234 123 456 7890</a></p>
+            <p>Address: 123 Lagos Street, Lagos, Nigeria</p>
+        </section>
+
+    </div>
 
   </main>
 
   <footer>
+
     <p>&copy; Visit Nigeria. All rights reserved.</p>
-
-
     <p><span id="currentyear"></span> | Otuekong Akpan | Lagos, Nigeria</p>
     <p>Last Updated: <span id="lastModified"></span></p>
+
     <nav class="socialmedia">
-    <a href="https://www.facebook.com">
-        <img src="images/facebook.png" alt="Facebook Icon" width="20">
-    </a>
-    <a href="https://www.instagram.com">
-        <img src="images/instagram.png" alt="Instagram Icon" width="20">
-    </a>
-    <a href="https://www.twitter.com">
-        <img src="images/twitter.png" alt="Twitter Icon" width="20">
-    </a>
-    
-</nav>
+        <a href="https://www.facebook.com">
+            <img src="images/facebook.png" alt="Facebook Icon" width="20">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/instagram.png" alt="Instagram Icon" width="20">
+        </a>
+        <a href="https://www.twitter.com">
+            <img src="images/twitter.png" alt="Twitter Icon" width="20">
+        </a>
+    </nav>
+
   </footer>
 </body>
 </html>
