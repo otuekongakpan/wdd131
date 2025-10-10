@@ -404,10 +404,29 @@ h3{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.trip-item p {
-
-    
+.available-hours table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
+
+.available-hours th,
+.available-hours td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--body-font);
+}
+
+.available-hours th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.available-hours tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 
 
 
